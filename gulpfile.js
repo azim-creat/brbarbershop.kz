@@ -54,23 +54,17 @@ function htmlmini() {
 }
 // Источник все scss файлов для склеивание в all scss
 let scssFiles = [
+  './app/scss/reset.scss',
+  './app/scss/variables.scss',
   './app/scss/style.scss',
-  // './app/scss/modules/headerUp.scss',
-  // './app/scss/modules/navigationMenu.scss',
-  // './app/scss/modules/firstScreen.scss',
-  // './app/scss/modules/products.scss',
-  // './app/scss/modules/news.scss',
-  // './app/scss/modules/bussines.scss',
-  // './app/scss/modules/form.scss',
-  // './app/scss/modules/footer.scss',
-  // './app/scss/media.scss',
-  // './app/scss/mediaModules/headerUpMedia.scss',
-  // './app/scss/mediaModules/firstScreenMedia.scss',
-  // './app/scss/mediaModules/productMedia.scss',
-  // './app/scss/mediaModules/newsMedia.scss',
-  // './app/scss/mediaModules/bussinesMedia.scss',
-  // './app/scss/mediaModules/quetionFormMedia.scss',
-  // './app/scss/mediaModules/footerMedia.scss',
+  './app/scss/modules/header.scss',
+  './app/scss/modules/firstScreen.scss',
+  './app/scss/modules/features.scss',
+  './app/scss/mediaModules/styleMedia.scss',
+  './app/scss/mediaModules/headerMedia.scss',
+  './app/scss/mediaModules/firstScreenMedia.scss',
+  './app/scss/mediaModules/featuresMedia.scss',
+
 ];
 
 // Функция для склеивания всех  scss  в один 

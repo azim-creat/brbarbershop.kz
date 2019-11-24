@@ -1,0 +1,70 @@
+header{
+    height: 100vh;
+}
+.firstScreen{
+    display: grid;
+    grid-template-areas: 'modelMan contextFirstScreen';
+    grid-template-columns: auto 1fr;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 10vw;
+}
+.firstScreen_context{
+    grid-area: contextFirstScreen;
+    text-align: right;
+}
+.firstScreen_subTitle{
+    font-size: 4vw;
+    padding: 0;
+    margin-top: 2vw;
+}
+.firstScreen_btn{
+    margin-top: 3vw;
+}
+.firstScreen_img{
+    grid-area: modelMan;
+    width: 28vw;
+    max-width: 350px;
+    //max-height:700px ;
+   
+}
+
+.firstScreen_footer{
+    width: 1200px;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.firstScreen_footer a{
+    color: $lightGray;
+    text-decoration: line-through;
+}
+
+.firstScreen_footer a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.firstScreen_footer_scroll{
+    writing-mode:tb-rl;
+}
+
+.firstScreen_footer_social{
+    a{
+        padding-left: 20px;
+    }
+}
+
+.firstScreen_footer_decorate_img{
+    width: 350px;
+    position: absolute;
+    transform: rotate(240deg) ;
+    top: 40%;
+    left: 40%;
+    transition: 1.5s ease;
+}

@@ -1,0 +1,62 @@
+@media (max-width: 1300px) {
+    .firstScreen_footer{
+        width: 90vw;
+        
+    }
+    .firstScreen_footer_decorate_img{
+        width: 250px;
+    }
+}
+
+@media(max-width:1050px){
+    .firstScreen_footer_decorate_img{
+        width: 150px;
+    }
+}
+
+@media(max-width:650px){
+    h1{
+        font-size: 8vw;
+    } 
+    .firstScreen{
+        grid-template-areas: 'modelMan'
+                            'contextFirstScreen';
+        grid-template-columns: 1fr;                    
+        grid-template-rows: auto 1fr;
+        justify-items: center;
+    }
+
+    .firstScreen_context{
+        text-align: center;
+
+    }
+}
+
+
+@media screen and (max-device-aspect-ratio: 9/16) { 
+    body{
+        background-color: aqua;
+    }
+
+    h1{
+        font-size: 18vw;
+    } 
+
+    .firstScreen_subTitle{
+        font-size: 8vw;
+        //margin-top: 2vw;
+    }
+    .firstScreen_img{
+        width: 48vw;
+    }
+    .firstScreen_footer_decorate_img{
+        top: 70%;
+        left: 35%;
+        transition: 1.5s ease;
+        z-index: 1;
+    }
+    .firstScreen{
+        position: relative;
+        z-index: 2;
+    }
+}

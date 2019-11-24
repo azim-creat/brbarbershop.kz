@@ -1,0 +1,22 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+.features_item {
+    background-color: $yellow;
+    padding: 40px 0;
+    transition: 0.42s linear;
+  svg {
+    fill: $darkGray;
+    width: 50px;
+    max-height: 50px;
+  }
+}
+
+.features_item:hover{
+
+        background-color: #fff;
+}
+
+
