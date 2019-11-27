@@ -1,0 +1,247 @@
+// VARIABLES // ============================== //
+$bg-color: #424242;
+$muted-color: mix(white, $bg-color, 70%);
+$trans-time: 300ms;
+$width: 100%;
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+ 
+
+
+
+
+// FORM // ============================== //
+form {
+
+padding: 50px 0;
+width: 80vw;
+  max-width: 400px;
+  margin: 0px auto;
+
+  h1 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    color: $yellow;
+  }
+  h5 {
+    text-align: center;
+    text-transform: uppercase;
+    color: $muted-color;
+  }
+  hr.sep {
+    background: $yellow;
+    box-shadow: none;
+    border: none;
+    height: 2px;
+    width: 25%;
+    margin: 0px auto 45px auto;
+  }
+  .emoji {
+    font-size: 1.2em;
+  }
+}
+
+.group {
+  position: relative;
+  margin: 20px 0;
+}
+.group_radio_lable{
+  margin-bottom: 15px ;
+  margin-top: 30px ;
+}
+
+
+// INPUTS // ============================== //
+
+
+input[type="number"], input[type="text"]
+ {
+  background: none;
+  color: $muted-color;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: $width;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $muted-color;
+  &:focus {
+    outline: none;
+  }
+  &:focus ~ label,
+  &:valid ~ label {
+    top: -14px;
+    font-size: 12px;
+    color: $yellow;
+  }
+  &:focus ~ .bar:before {
+    width: $width;
+  }
+}
+
+
+
+.group label {
+  color: $muted-color;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: $trans-time ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: $width;
+  &:before {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    position: absolute;
+    background: $yellow;
+    transition: $trans-time ease all;
+    left: 0%;
+  }
+}
+
+
+
+
+// Removing arrow of type Number input ///Start///
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Removing arrow of type Number input ///End///
+
+// BUTTONS // ============================== //
+.btn {
+  width: 100%;
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  background: #fff;
+  color: $darkGray;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  &:hover {
+    color: mix(black, $muted-color, 30%);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+  }
+  &.btn-link {
+    background: $yellow;
+    color: mix(white, $yellow, 80%);
+    &:hover {
+      background: darken($yellow, 5%);
+      color: mix(white, $yellow, 85%);
+    }
+  }
+  &.btn-submit {
+    background: $yellow;
+    
+    &:hover {
+      background: darken($yellow, 5%);
+      color: mix(white, $yellow, 85%);
+    }
+  }
+  &.btn-cancel {
+    background: #eee;
+    &:hover {
+      background: darken(#eee, 5%);
+      color: mix(black, $muted-color, 30%);
+    }
+  }
+}
+
+.btn-box {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
+// For radio button
+.group_radio_btn_day{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
+.group_radio_btn_time{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+}
+
+.form_radio_btn {
+  width: 100%;
+	display: inline-block;
+	margin-right: 5px;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+  width: 100%;
+  text-align: center;
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+  line-height: 34px;
+  color: $lightGray;
+	border: 1px solid $lightGray;
+	border-radius: 2px;
+	user-select: none;
+}
+ 
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+  background:$yellow;
+  color: $darkGray;
+}
+ 
+/* Hover */
+.form_radio_btn label:hover {
+  border: 1px solid #fff;
+	color: #fff;
+}
+ 

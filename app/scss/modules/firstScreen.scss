@@ -32,17 +32,21 @@ h1{
 }
 
 .firstScreen_footer{
+    margin: 0 auto;
     width: 1200px;
+    
     position: absolute;
+    z-index: 1000000;
     bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    
 }
 
 .firstScreen_footer a{
-    color: $lightGray;
     text-decoration: line-through;
+    color: $lightGray;
 }
 
 .firstScreen_footer a:hover{
@@ -55,7 +59,9 @@ h1{
 }
 
 .firstScreen_footer_social{
-    a{
+    
+    a{  
+      
         padding-left: 20px;
     }
 }

@@ -5,20 +5,22 @@ body {
 .blackBG {
   background-image: url(../images/blackorchid.png);
 }
-.yellowBG{
-    background-color: $yellow;
+.blackBG2 {
+  background-image: url(../images/blackorchid_@4X.png);
+}
+.yellowBG {
+  background-color: $yellow;
 }
 .container {
   width: 1200px;
   margin: 0 auto;
 }
-h3{
-    font-size: 20px;
-    font-weight: 600 ;
-    color: $darkGray;
-
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: $darkGray;
 }
-input[type="button"] { 
+input[type="button"] {
   font-size: 15px;
   font-weight: 600;
   font-family: "Exo 2", sans-serif;
@@ -65,3 +67,4 @@ input[type="button"]:hover {
 //     left: -10%;
 //   }
 // }
+

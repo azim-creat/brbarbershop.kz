@@ -1,0 +1,30 @@
+.footer_wraper{
+    padding: 20px 0;
+    h5{
+        padding: 10px 0;
+        text-align: center ;
+        color: $lightGray ;
+    }
+}
+.footerContacts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer_contact{
+    //flex-basis: 24%;
+    min-width: 280px;
+    margin: 10px 0;
+    svg{
+        width: 20px;
+        height: 20px;
+        fill: $yellow;
+        float: left;
+        margin-right: 15px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    
+}
+

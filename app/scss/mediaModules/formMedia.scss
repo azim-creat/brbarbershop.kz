@@ -1,0 +1,11 @@
+@media(max-width:500px){
+  .group_radio_btn_day{
+    grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+  }
+    .group_radio_btn_time{
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+      }
+}

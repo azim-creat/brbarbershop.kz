@@ -18,23 +18,7 @@ const autoprefixer = require('autoprefixer');
 //Источник CSS файлов
 const cssFiles = [
   './app/styles/all.css'
-  // './app/styles/style.css',
-  // './app/styles/modules/headerUp.css',
-  // './app/styles/modules/navigationMenu.css',
-  // './app/styles/modules/firstScreen.css',
-  // './app/styles/modules/products.css',
-  // './app/styles/modules/news.css',
-  // './app/styles/modules/bussines.css',
-  // './app/styles/modules/form.css',
-  // './app/styles/modules/footer.css',
-  // './app/styles/media.css',
-  // './app/styles/mediaModules/headerUpMedia.css',
-  // './app/styles/mediaModules/firstScreenMedia.css',
-  // './app/styles/mediaModules/productMedia.css',
-  // './app/styles/mediaModules/newsMedia.css',
-  // './app/styles/mediaModules/bussinesMedia.css',
-  // './app/styles/mediaModules/quetionFormMedia.css',
-  // './app/styles/mediaModules/footerMedia.css',
+  
 ];
 
 //Источник JS файлов
@@ -60,10 +44,14 @@ let scssFiles = [
   './app/scss/modules/header.scss',
   './app/scss/modules/firstScreen.scss',
   './app/scss/modules/features.scss',
+  './app/scss/modules/form.scss',
+  './app/scss/modules/footer.scss',
   './app/scss/mediaModules/styleMedia.scss',
   './app/scss/mediaModules/headerMedia.scss',
   './app/scss/mediaModules/firstScreenMedia.scss',
   './app/scss/mediaModules/featuresMedia.scss',
+  './app/scss/mediaModules/formMedia.scss',
+  './app/scss/mediaModules/footerMedia.scss',
 
 ];
 
