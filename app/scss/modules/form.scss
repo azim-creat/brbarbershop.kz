@@ -53,7 +53,7 @@ width: 80vw;
 .group_radio_lable{
   margin-bottom: 15px ;
   margin-top: 30px ;
-}
+} 
 
 
 // INPUTS // ============================== //
@@ -61,9 +61,11 @@ width: 80vw;
 
 input[type="number"], input[type="text"]
  {
+  //box-shadow: 0 0 0 30px #0a0a0a inset !important;
   background: none;
-  color: $muted-color;
+  color: #fff ;
   font-size: 18px;
+  color: #fff ;
   padding: 10px 10px 10px 5px;
   display: block;
   width: $width;
@@ -245,3 +247,4 @@ input[type=number]::-webkit-outer-spin-button {
 	color: #fff;
 }
  
+

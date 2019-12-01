@@ -42,7 +42,7 @@ $(document).ready(() => {
     })
 
 
-    $(".firstScreen_footer , .firstScreen_context").on("click", "a", function (event) {
+    $(".firstScreen_footer , .firstScreen_context, #nav").on("click", "a", function (event) {
         event.preventDefault();
         var id = $(this).attr('href'),
             top = $(id).offset().top;
@@ -85,8 +85,26 @@ $(document).ready(() => {
     let Mounths = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
     console.log(Mounths[afTomorrowDayM]);
 
+    $('#day-1').val(todayDayN + ' ' + Mounths[todayDayM]);
+    $('#day-2').val(tomorrowDayN + ' ' + Mounths[tomorrowDayM]);
+    $('#day-3').val(afTomorrowDayN + ' ' + Mounths[afTomorrowDayM]);
+
+    
     $('.day-1').append(todayDayN + ' ' + Mounths[todayDayM]);
     $('.day-2').append(tomorrowDayN + ' ' + Mounths[tomorrowDayM]);
     $('.day-3').append(afTomorrowDayN + ' ' + Mounths[afTomorrowDayM]);
 
+   
+
+
+
+
+
+
+
+
+
 })//document ready
+
+
+

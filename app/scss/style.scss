@@ -1,10 +1,16 @@
 body {
+  background-color: rgb(14, 12, 12);
   color: #fff;
   font-family: "Exo 2", sans-serif;
 }
 .blackBG {
   background-image: url(../images/blackorchid.png);
 }
+.blackBGTR {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+
 .blackBG2 {
   background-image: url(../images/blackorchid_@4X.png);
 }
@@ -20,7 +26,30 @@ h3 {
   font-weight: 600;
   color: $darkGray;
 }
-input[type="button"] {
+// input[type="button"] {
+//   font-size: 15px;
+//   font-weight: 600;
+//   font-family: "Exo 2", sans-serif;
+//   text-transform: uppercase;
+//   color: #000;
+//   letter-spacing: 0.2em;
+//   width: 200px;
+//   height: 50px;
+//   background: $yellow;
+//   border: 0px;
+//   border-radius: 1px;
+//   transition: 0.1s ease;
+// }
+
+// input[type="button"]:hover {
+//   background: $lightGray;
+// }
+
+
+
+
+
+.firstScreen_btn {
   font-size: 15px;
   font-weight: 600;
   font-family: "Exo 2", sans-serif;
@@ -31,40 +60,10 @@ input[type="button"] {
   height: 50px;
   background: $yellow;
   border: 0px;
+  border-radius: 1px;
   transition: 0.1s ease;
 }
 
-input[type="button"]:hover {
-  background: $lightGray;
+.firstScreen_btn:hover {
+  background: $lightYellow;
 }
-
-// input[type="button"]::before {
-//   content: "";
-//   position: absolute;
-//   width: 120%;
-//   height: 120%;
-//   background: #3498db;
-//   transform: rotate(45deg);
-// //   left: -110%;
-// //   top: 90%;
-// }
-// input[type="button"]:hover::before {
-//   animation: aaa 0.7s 1;
-//   top: -10%;
-//   left: -10%;
-// }
-// @keyframes aaa {
-//   0% {
-//     left: -110%;
-//     top: 90%;
-//   }
-//   50% {
-//     left: 10%;
-//     top: -30%;
-//   }
-//   100% {
-//     top: -10%;
-//     left: -10%;
-//   }
-// }
-

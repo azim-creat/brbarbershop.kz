@@ -1,0 +1,28 @@
+.service_title {
+ 
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+  
+}
+.service {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-around;
+
+  text-align: center;
+
+  svg {
+      fill:#fff ;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.service_item {
+  h3{
+    color:#fff;
+  }
+    color: #fff;
+  justify-self: center;
+}
