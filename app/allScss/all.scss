@@ -55,28 +55,6 @@ h3 {
   font-weight: 600;
   color: $darkGray;
 }
-// input[type="button"] {
-//   font-size: 15px;
-//   font-weight: 600;
-//   font-family: "Exo 2", sans-serif;
-//   text-transform: uppercase;
-//   color: #000;
-//   letter-spacing: 0.2em;
-//   width: 200px;
-//   height: 50px;
-//   background: $yellow;
-//   border: 0px;
-//   border-radius: 1px;
-//   transition: 0.1s ease;
-// }
-
-// input[type="button"]:hover {
-//   background: $lightGray;
-// }
-
-
-
-
 
 .firstScreen_btn {
   font-size: 15px;
@@ -355,7 +333,7 @@ h1{
   text-align: center;
 }
 .features_item {
-    background-color: $yellow;
+    background-color: $lightYellow;
     padding: 40px 0;
     transition: 0.42s linear;
   svg {
@@ -477,8 +455,6 @@ h1{
     }
 }
 // VARIABLES // ============================== //
-$bg-color: #424242;
-$muted-color: mix(white, $bg-color, 70%);
 $trans-time: 300ms;
 $width: 100%;
 
@@ -509,7 +485,7 @@ width: 80vw;
   h5 {
     text-align: center;
     text-transform: uppercase;
-    color: $muted-color;
+    color: $lightGray;
   }
   hr.sep {
     background: $yellow;
@@ -537,9 +513,8 @@ width: 80vw;
 // INPUTS // ============================== //
 
 
-input[type="number"], input[type="text"]
+input[type="tel"], input[type="text"]
  {
-  //box-shadow: 0 0 0 30px #0a0a0a inset !important;
   background: none;
   color: #fff ;
   font-size: 18px;
@@ -549,7 +524,7 @@ input[type="number"], input[type="text"]
   width: $width;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid $muted-color;
+  border-bottom: 1px solid $lightGray;
   &:focus {
     outline: none;
   }
@@ -567,7 +542,7 @@ input[type="number"], input[type="text"]
 
 
 .group label {
-  color: $muted-color;
+  color: $lightGray;
   font-size: 16px;
   font-weight: normal;
   position: absolute;
@@ -598,24 +573,24 @@ input[type="number"], input[type="text"]
 
 // Removing arrow of type Number input ///Start///
 
-input[type="number"]::-webkit-outer-spin-button,
+input[type="tel"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+input[type="tel"] {
   -moz-appearance: textfield;
 }
-input[type="number"]:hover,
-input[type="number"]:focus {
+input[type="tel"]:hover,
+input[type="tel"]:focus {
   -moz-appearance: number-input;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type=tel]::-webkit-inner-spin-button,
+input[type=tel]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  margin: 0;
+  margin: 0; 
 }
 
 // Removing arrow of type Number input ///End///
@@ -638,15 +613,15 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   &:hover {
-    color: mix(black, $muted-color, 30%);
+    color: $darkGray;
     box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
   }
   &.btn-link {
     background: $yellow;
     color: mix(white, $yellow, 80%);
     &:hover {
-      background: darken($yellow, 5%);
-      color: mix(white, $yellow, 85%);
+      background: $lightYellow;
+      color: $darkGray;
     }
   }
   &.btn-submit {
@@ -654,17 +629,17 @@ input[type=number]::-webkit-outer-spin-button {
     
     &:hover {
       background: darken($yellow, 5%);
-      color: mix(white, $yellow, 85%);
+      color: $darkGray;
     }
   }
   &.btn-cancel {
     background: #eee;
     &:hover {
       background: darken(#eee, 5%);
-      color: mix(black, $muted-color, 30%);
+      color: mix(black, $lightGray, 30%);
     }
   }
-}
+} 
 
 .btn-box {
   width: 100%;
@@ -1011,6 +986,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 @media (orientation: portrait) {
+  .firstScreen_footer{
+    position: relative;
+  }
+
   .firstScreen_footer_decorate_img {
     display: none;
   }
@@ -1023,7 +1002,7 @@ input[type=number]::-webkit-outer-spin-button {
       "contextFirstScreen"
       "firstScreen_footer";
     grid-template-columns: auto;
-    grid-template-rows: auto auto 200px;
+    grid-template-rows: auto auto 10%;
   }
 
   .firstScreen_img {
@@ -1119,38 +1098,38 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
 }
-@media(max-width:1100px){
-    .aboutContent{
-        h2{
-            font-size: 8vw;
-        }
+@media (max-width: 1100px) {
+  .aboutContent {
+    h2 {
+      font-size: 8vw;
     }
+  }
 }
 
-@media(max-width:700px){
-    .about{
-        padding: 50px 0;
-        display: grid;
-        grid-gap: 50px;
-        grid-template-areas: 'aboutImg'' aboutContent';
-        grid-template-columns: 90vw;
-        grid-template-rows:80vw 1fr;
-    }
+@media (max-width: 700px) {
+  .about {
+    padding: 50px 0;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas: "aboutImg" " aboutContent";
+    grid-template-columns: 80vw;
+    grid-template-rows: 80vw 1fr;
+  }
 
-    .aboutImg{
+  .aboutImg {
+    text-align: center;
+    img {
         text-align: center;
-        img{
-            width: auto;
-            height: 100%;
-            
-        }
+      width: auto;
+      height: 100%;
     }
+  }
 
-    .contentText {
-        font-size: 20px ;
+  .contentText {
+    font-size: 20px;
+  }
+}
 
-}
-}
 @media(max-width:500px){
   .group_radio_btn_day{
     grid-template-columns: 1fr;

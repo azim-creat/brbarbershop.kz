@@ -27,7 +27,6 @@
     <meta name="msapplication-TileImage" content="dist/images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
     <header class="blackBG">
         <section class="container">
@@ -56,7 +55,7 @@
                         Br Barber
                     </h1>
                     <h2 class="firstScreen_subTitle">Традиционый сервис в современном стиле</h2>
-                    <a href="#bookingForm"><button  class="firstScreen_btn"  >3писаться ⟶</button></a>
+                    <a href="#bookingForm"><button class="firstScreen_btn">3аписаться ⟶</button></a>
                 </div>
                 <img src="dist/images/sciossors.png" alt="" class="firstScreen_footer_decorate_img">
                 <div class="firstScreen_footer">
@@ -91,10 +90,12 @@
         </div>
     </section>
 
-    <section id="price"  class="blackBGTR parallax-window" data-parallax="scroll" data-image-src="dist/images/forBG.jpg">
+    <section id="price" class="blackBGTR parallax-window" data-parallax="scroll" data-image-src="dist/images/forBG.jpg">
         <div class="pricesmain container">
-            <div class="priceTitle"><h2 >Наши цены</h2></div>
-            
+            <div class="priceTitle">
+                <h2>Наши цены</h2>
+            </div>
+
             <div class="price_wrapper">
                 <div class="price">
                     <p class="priceTitle">
@@ -180,13 +181,6 @@
 
         </div>
     </section>
-
-
-
-
-
-
-
     <section class="yellowBG" id="scroll">
         <div class="features">
             <div class="features_item">
@@ -283,7 +277,7 @@
             </div>
 
             <div class="group">
-                <input type="number" required="required" pattern="[0-9]" name="phone" /><span
+                <input type="tel" required="required"  name="phone" /><span
                     class="highlight"></span><span class="bar"></span>
                 <label class=".labelForText">Номер телефона</label>
             </div>
@@ -356,7 +350,7 @@
         </form>
     </div>
 
-    <section class="blackBGTR parallax-window" data-parallax="scroll" data-image-src="dist/images/forBG.jpg" >
+    <section class="blackBGTR parallax-window" data-parallax="scroll" data-image-src="dist/images/forBG.jpg">
         <h2 class="service_title">Вас ждёт</h2>
         <div class="service container">
 
@@ -866,8 +860,10 @@
 
     </footer>
 
-
-
+    <!-- <script type="text/javascript">
+        QueryLoader.init();
+    </script>
+ -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="dist/parallax.min.js"></script>

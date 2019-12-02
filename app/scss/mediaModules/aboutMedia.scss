@@ -1,32 +1,31 @@
-@media(max-width:1100px){
-    .aboutContent{
-        h2{
-            font-size: 8vw;
-        }
+@media (max-width: 1100px) {
+  .aboutContent {
+    h2 {
+      font-size: 8vw;
     }
+  }
 }
 
-@media(max-width:700px){
-    .about{
-        padding: 50px 0;
-        display: grid;
-        grid-gap: 50px;
-        grid-template-areas: 'aboutImg'' aboutContent';
-        grid-template-columns: 90vw;
-        grid-template-rows:80vw 1fr;
-    }
+@media (max-width: 700px) {
+  .about {
+    padding: 50px 0;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas: "aboutImg" " aboutContent";
+    grid-template-columns: 80vw;
+    grid-template-rows: 80vw 1fr;
+  }
 
-    .aboutImg{
+  .aboutImg {
+    text-align: center;
+    img {
         text-align: center;
-        img{
-            width: auto;
-            height: 100%;
-            
-        }
+      width: auto;
+      height: 100%;
     }
+  }
 
-    .contentText {
-        font-size: 20px ;
-
-}
+  .contentText {
+    font-size: 20px;
+  }
 }

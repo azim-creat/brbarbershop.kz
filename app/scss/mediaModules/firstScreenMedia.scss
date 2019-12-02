@@ -33,6 +33,10 @@
 }
 
 @media (orientation: portrait) {
+  .firstScreen_footer{
+    position: relative;
+  }
+
   .firstScreen_footer_decorate_img {
     display: none;
   }
@@ -45,7 +49,7 @@
       "contextFirstScreen"
       "firstScreen_footer";
     grid-template-columns: auto;
-    grid-template-rows: auto auto 200px;
+    grid-template-rows: auto auto 10%;
   }
 
   .firstScreen_img {

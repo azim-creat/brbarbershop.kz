@@ -1,6 +1,4 @@
 // VARIABLES // ============================== //
-$bg-color: #424242;
-$muted-color: mix(white, $bg-color, 70%);
 $trans-time: 300ms;
 $width: 100%;
 
@@ -31,7 +29,7 @@ width: 80vw;
   h5 {
     text-align: center;
     text-transform: uppercase;
-    color: $muted-color;
+    color: $lightGray;
   }
   hr.sep {
     background: $yellow;
@@ -59,9 +57,8 @@ width: 80vw;
 // INPUTS // ============================== //
 
 
-input[type="number"], input[type="text"]
+input[type="tel"], input[type="text"]
  {
-  //box-shadow: 0 0 0 30px #0a0a0a inset !important;
   background: none;
   color: #fff ;
   font-size: 18px;
@@ -71,7 +68,7 @@ input[type="number"], input[type="text"]
   width: $width;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid $muted-color;
+  border-bottom: 1px solid $lightGray;
   &:focus {
     outline: none;
   }
@@ -89,7 +86,7 @@ input[type="number"], input[type="text"]
 
 
 .group label {
-  color: $muted-color;
+  color: $lightGray;
   font-size: 16px;
   font-weight: normal;
   position: absolute;
@@ -120,24 +117,24 @@ input[type="number"], input[type="text"]
 
 // Removing arrow of type Number input ///Start///
 
-input[type="number"]::-webkit-outer-spin-button,
+input[type="tel"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+input[type="tel"] {
   -moz-appearance: textfield;
 }
-input[type="number"]:hover,
-input[type="number"]:focus {
+input[type="tel"]:hover,
+input[type="tel"]:focus {
   -moz-appearance: number-input;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type=tel]::-webkit-inner-spin-button,
+input[type=tel]::-webkit-outer-spin-button {
   -webkit-appearance: none;
-  margin: 0;
+  margin: 0; 
 }
 
 // Removing arrow of type Number input ///End///
@@ -160,15 +157,15 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   &:hover {
-    color: mix(black, $muted-color, 30%);
+    color: $darkGray;
     box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
   }
   &.btn-link {
     background: $yellow;
     color: mix(white, $yellow, 80%);
     &:hover {
-      background: darken($yellow, 5%);
-      color: mix(white, $yellow, 85%);
+      background: $lightYellow;
+      color: $darkGray;
     }
   }
   &.btn-submit {
@@ -176,17 +173,17 @@ input[type=number]::-webkit-outer-spin-button {
     
     &:hover {
       background: darken($yellow, 5%);
-      color: mix(white, $yellow, 85%);
+      color: $darkGray;
     }
   }
   &.btn-cancel {
     background: #eee;
     &:hover {
       background: darken(#eee, 5%);
-      color: mix(black, $muted-color, 30%);
+      color: mix(black, $lightGray, 30%);
     }
   }
-}
+} 
 
 .btn-box {
   width: 100%;

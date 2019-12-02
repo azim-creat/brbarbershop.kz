@@ -285,7 +285,7 @@ h1 {
   text-align: center; }
 
 .features_item {
-  background-color: #e6b956;
+  background-color: #f0b73d;
   padding: 40px 0;
   transition: 0.42s linear; }
   .features_item svg {
@@ -392,7 +392,7 @@ form {
   form h5 {
     text-align: center;
     text-transform: uppercase;
-    color: #c6c6c6; }
+    color: #8b8484; }
   form hr.sep {
     background: #e6b956;
     box-shadow: none;
@@ -411,7 +411,7 @@ form {
   margin-bottom: 15px;
   margin-top: 30px; }
 
-input[type="number"], input[type="text"] {
+input[type="tel"], input[type="text"] {
   background: none;
   color: #fff;
   font-size: 18px;
@@ -421,20 +421,20 @@ input[type="number"], input[type="text"] {
   width: 100%;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid #c6c6c6; }
-  input[type="number"]:focus, input[type="text"]:focus {
+  border-bottom: 1px solid #8b8484; }
+  input[type="tel"]:focus, input[type="text"]:focus {
     outline: none; }
-  input[type="number"]:focus ~ label,
-  input[type="number"]:valid ~ label, input[type="text"]:focus ~ label,
+  input[type="tel"]:focus ~ label,
+  input[type="tel"]:valid ~ label, input[type="text"]:focus ~ label,
   input[type="text"]:valid ~ label {
     top: -14px;
     font-size: 12px;
     color: #e6b956; }
-  input[type="number"]:focus ~ .bar:before, input[type="text"]:focus ~ .bar:before {
+  input[type="tel"]:focus ~ .bar:before, input[type="text"]:focus ~ .bar:before {
     width: 100%; }
 
 .group label {
-  color: #c6c6c6;
+  color: #8b8484;
   font-size: 16px;
   font-weight: normal;
   position: absolute;
@@ -457,20 +457,20 @@ input[type="number"], input[type="text"] {
     transition: 300ms ease all;
     left: 0%; }
 
-input[type="number"]::-webkit-outer-spin-button,
+input[type="tel"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
-input[type="number"] {
+input[type="tel"] {
   -moz-appearance: textfield; }
 
-input[type="number"]:hover,
-input[type="number"]:focus {
+input[type="tel"]:hover,
+input[type="tel"]:focus {
   -moz-appearance: number-input; }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type=tel]::-webkit-inner-spin-button,
+input[type=tel]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0; }
 
@@ -491,24 +491,24 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
   .btn:hover {
-    color: #8b8b8b;
+    color: #1f2024;
     box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12); }
   .btn.btn-link {
     background: #e6b956;
     color: #faf1dd; }
     .btn.btn-link:hover {
-      background: #e3b040;
-      color: #fbf5e6; }
+      background: #f0b73d;
+      color: #1f2024; }
   .btn.btn-submit {
     background: #e6b956; }
     .btn.btn-submit:hover {
       background: #e3b040;
-      color: #fbf5e6; }
+      color: #1f2024; }
   .btn.btn-cancel {
     background: #eee; }
     .btn.btn-cancel:hover {
       background: #e1e1e1;
-      color: #8b8b8b; }
+      color: #615c5c; }
 
 .btn-box {
   width: 100%;
@@ -768,6 +768,8 @@ input[type=number]::-webkit-outer-spin-button {
     bottom: 150px; } }
 
 @media (orientation: portrait) {
+  .firstScreen_footer {
+    position: relative; }
   .firstScreen_footer_decorate_img {
     display: none; }
   .firstScreen {
@@ -775,7 +777,7 @@ input[type=number]::-webkit-outer-spin-button {
     display: grid;
     grid-template-areas: "modelMan" "contextFirstScreen" "firstScreen_footer";
     grid-template-columns: auto;
-    grid-template-rows: auto auto 200px; }
+    grid-template-rows: auto auto 10%; }
   .firstScreen_img {
     justify-self: center; }
   .firstScreen_context {
@@ -846,11 +848,12 @@ input[type=number]::-webkit-outer-spin-button {
     display: grid;
     grid-gap: 50px;
     grid-template-areas: "aboutImg" " aboutContent";
-    grid-template-columns: 90vw;
+    grid-template-columns: 80vw;
     grid-template-rows: 80vw 1fr; }
   .aboutImg {
     text-align: center; }
     .aboutImg img {
+      text-align: center;
       width: auto;
       height: 100%; }
   .contentText {
